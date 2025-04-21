@@ -225,7 +225,7 @@ def solve_system():
     cur_y = a2
     max_val1 = 0
     max_val2 = 0
-
+    """
     while True:
         while True:
             try:
@@ -244,6 +244,7 @@ def solve_system():
         else:
             #Jac(func1, func2, x0, y0, epsilon)
             break
+    """        
     while cur_x < b1:
         while cur_y < b2:
             max_val1 = max(max_val1, abs(part_derivative(phi1,cur_x,cur_y,'x')) + abs(part_derivative(phi1,cur_x,cur_y,'y')))
